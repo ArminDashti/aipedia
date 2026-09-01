@@ -1,0 +1,29 @@
+name: aipedia
+services:
+  aipedia-api:
+    image: ${IMAGE_TAG:-aipedia-api:latest}
+    container_name: aipedia-api
+    environment:
+      ADDR: ":${INTERNAL_PORT:-8091}"
+      DATABASE_URL: /data/aipedia.db
+      MIGRATIONS_DIR: /app/migrations
+      GIN_MODE: release
+    volumes:
+      - aipedia_sqlite_data:/data
+    expose:
+      - "${INTERNAL_PORT:-8091}"
+    ports:
+      - target: ${INTERNAL_PORT:-8091}
+        published: ${PUBLISH_PORT:-8172}
+        protocol: tcp
+    networks:
+      - aipedia-net
+    restart: "no"
+
+networks:
+  aipedia-net:
+    name: ${DOCKER_NETWORK:-t3-net}
+    external: true
+
+volumes:
+  aipedia_sqlite_data:

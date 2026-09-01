@@ -1,0 +1,29 @@
+*.exe
+*.EXE
+bin/
+.env
+.armin/
+.cursor/
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# === auto-managed large files (>5MB) ===
+bin/import-bookmarks.exe
+bin/server.exe
+
+# BEGIN AUTO-MANAGED LARGE FILES (>5MB)
+bin/import-bookmarks.exe
+bin/server.exe
+# END AUTO-MANAGED LARGE FILES
+
+# === auto-managed large files (github-commit-push-all) ===
+bin/import-bookmarks.exe
+bin/server.exe
+
+# AUTO-IGNORE-LARGE-FILES (>5MB) â€” managed by github-commit-push-all
+# github-commit-push-all: large files (>5MB) — auto-managed
+
+# auto-managed: files > 5MB

@@ -1,0 +1,41 @@
+name: aipedia
+
+services:
+  aipedia-api:
+    image: ${API_IMAGE_TAG:-aipedia-api:latest}
+    container_name: aipedia-api
+    expose:
+      - "8091"
+    environment:
+      ADDR: ":8091"
+      DATABASE_URL: /data/aipedia.db
+      MIGRATIONS_DIR: /app/migrations
+      GIN_MODE: release
+    volumes:
+      - aipedia-sqlite-vol:/data
+    networks:
+      - t3-net
+    restart: "no"
+
+  aipedia-webui:
+    image: ${WEBUI_IMAGE_TAG:-aipedia-webui:latest}
+    container_name: aipedia-webui
+    expose:
+      - "80"
+    environment:
+      API_HOST: aipedia-api
+      API_PORT: "8091"
+    networks:
+      - t3-net
+    depends_on:
+      - aipedia-api
+    restart: "no"
+
+networks:
+  t3-net:
+    name: ${DOCKER_NETWORK:-t3-net}
+    external: true
+
+volumes:
+  aipedia-sqlite-vol:
+    name: aipedia-sqlite-vol

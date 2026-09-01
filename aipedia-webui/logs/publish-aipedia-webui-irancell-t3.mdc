@@ -1,0 +1,27 @@
+# Publish aipedia-webui to Irancell-T3
+
+| Field | Value |
+|-------|-------|
+| Timestamp | `2026-08-08 11:02:21` |
+| Host | `t3-new` (`2.144.27.74`) |
+| Domain | `aipedia.xaigrok.ir` |
+| Result | Success |
+
+## Commands (summary)
+
+1. SSH verify host resources and running containers (read-only)
+2. Upload local `aipedia-webui` source to `/cloud-admin/repos/aipedia-webui` via tar over SSH
+3. `docker build --build-arg VITE_SITE_URL=https://aipedia.xaigrok.ir -t aipedia-webui:latest .`
+4. `docker compose up -d --no-deps aipedia-webui` in `/cloud-admin/docker/aipedia`
+5. Verify HTTPS SNI routes (`/`, `/models`, `/chatbots`, `/skills`, `/mcp`, `/sitemap.xml`, `/robots.txt` → 200)
+
+## Important outputs
+
+- `aipedia-webui` recreated; content-length increased (old ~2664 → new ~5479)
+- `softether`, `mullvad-1`, `haproxy` left running unchanged (no restart/HUP)
+- HAProxy already routed `aipedia.xaigrok.ir` → `aipedia-webui:80`; no proxy config edit
+
+## Warnings
+
+- TLS PEM for `aipedia.xaigrok.ir` remains short-lived/self-signed style cert (not Let's Encrypt); expires ~2026-09-06
+- Did not touch VPN containers or SoftEther SNI passthrough

@@ -1,0 +1,11 @@
+# aipedia-webui Owner/nav update on Irancell-T3
+
+- timestamp: 2026-08-28 ~00:30 (+03:30)
+- host: t3-new (2.144.27.124)
+- stack: aipedia (webui only)
+- actions:
+  - Built aipedia-webui:latest locally
+  - Uploaded image tar to /tmp, docker load
+  - docker compose up -d --no-deps --force-recreate aipedia-webui
+- result: container Up; HTTPS /models returns 200
+- notes: API unchanged (static webui catalogs); Plugin route removed

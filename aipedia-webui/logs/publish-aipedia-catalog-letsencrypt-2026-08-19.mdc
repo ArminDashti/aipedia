@@ -1,0 +1,27 @@
+# Publish aipedia-webui to Irancell-T3 (catalog + Let's Encrypt)
+
+| Field | Value |
+|-------|-------|
+| Timestamp | `2026-08-19 18:41:00` |
+| Host | `t3-new` (`2.144.27.74`) |
+| Domain | `aipedia.xaigrok.ir` |
+| Result | Success |
+
+## Commands (summary)
+
+1. Issued Let's Encrypt HTTP-01 standalone cert for `aipedia.xaigrok.ir` (SSH on :80 stopped briefly)
+2. Installed concatenated PEM at `/cloud-admin/docker-volumes/reverse-proxy/haproxy/certs/aipedia.xaigrok.ir.pem`
+3. `docker kill -s HUP haproxy`
+4. Uploaded webui source and `docker build -t aipedia-webui:latest`
+5. `docker compose up -d --no-deps aipedia-webui` in `/cloud-admin/docker/aipedia`
+
+## Important outputs
+
+- Cert issuer: Let's Encrypt YE2; notAfter 2026-11-17
+- Deploy hook already listed `aipedia.xaigrok.ir`
+- SoftEther SNI `ovpbackup.xaigrok.ir` still presents its existing cert
+- Live `/models` prerender includes OpenWeight, Introduced, Input (~/M); no Logo/Link columns; no `~$`
+
+## Warnings
+
+- Certbot pre/post hooks failed to reload ssh.service because it was stopped for HTTP-01; ssh was started again by the issuance script
