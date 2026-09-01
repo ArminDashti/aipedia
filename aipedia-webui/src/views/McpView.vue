@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CatalogTable from '@/components/CatalogTable.vue'
-import { mcp } from '@/data/mcp'
+import CatalogSections from '@/components/CatalogSections.vue'
+import { mcpSections } from '@/data/mcp'
 
 const columns = [
   { key: 'owner', label: 'Owner', type: 'brand' as const },
@@ -10,12 +10,11 @@ const columns = [
 </script>
 
 <template>
-  <CatalogTable
+  <CatalogSections
     title="MCP"
-    description="Model Context Protocol servers and registries."
+    description="Model Context Protocol servers and registries, grouped by purpose."
     :columns="columns"
-    :rows="mcp"
+    :sections="mcpSections"
     initial-sort-key="owner"
-    initial-sort-dir="asc"
   />
 </template>

@@ -1,6 +1,6 @@
 const SITE_NAME = 'AIPedia'
 const DEFAULT_DESCRIPTION =
-  'AIPedia is a public AI knowledge encyclopedia. Browse catalogs of skills, MCP servers, tools, repos, companies, models, code editors, and chatbots.'
+  'AIPedia is a public AI knowledge encyclopedia. Browse catalogs of skills, MCP servers, tools, companies, models, code editors, and chatbots.'
 const OG_IMAGE = `${__SITE_URL__}/og.png`
 const JSON_LD_ID = 'aipedia-json-ld'
 

@@ -19,10 +19,13 @@ const props = withDefaults(
     rows: Record<string, unknown>[]
     initialSortKey?: string | null
     initialSortDir?: SortDir
+    /** Hide page title and description; use for nested section tables. */
+    bare?: boolean
   }>(),
   {
     initialSortKey: null,
     initialSortDir: 'asc',
+    bare: false,
   },
 )
 
@@ -172,7 +175,7 @@ function sortIndicator(column: CatalogColumn): string {
 
 <template>
   <section class="flex flex-1 flex-col gap-4">
-    <header class="space-y-1">
+    <header v-if="!bare" class="space-y-1">
       <h1 class="text-2xl font-semibold tracking-tight">{{ title }}</h1>
       <p v-if="description" class="text-sm text-muted-foreground">{{ description }}</p>
     </header>

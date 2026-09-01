@@ -2,7 +2,6 @@ export type CatalogKind =
   | 'skills'
   | 'mcp'
   | 'tools'
-  | 'repos'
   | 'companies'
   | 'models'
   | 'code'
@@ -23,7 +22,6 @@ const KIND_ROUTE: Record<CatalogKind, string> = {
   skills: '/skills',
   mcp: '/mcp',
   tools: '/tools',
-  repos: '/repos',
   companies: '/companies',
   models: '/models',
   code: '/code',
@@ -34,7 +32,6 @@ export const KIND_LABEL: Record<CatalogKind, string> = {
   skills: 'Skill',
   mcp: 'MCP',
   tools: 'Tool',
-  repos: 'Repo',
   companies: 'Company',
   models: 'Model',
   code: 'Code',
@@ -53,7 +50,6 @@ export async function buildCatalogIndex(): Promise<CatalogSearchItem[]> {
     { skills },
     { mcp },
     { tools },
-    { repos },
     { companies },
     { models },
     { code },
@@ -62,7 +58,6 @@ export async function buildCatalogIndex(): Promise<CatalogSearchItem[]> {
     import('@/data/skills'),
     import('@/data/mcp'),
     import('@/data/tools'),
-    import('@/data/repos'),
     import('@/data/companies'),
     import('@/data/models'),
     import('@/data/code'),
@@ -105,17 +100,6 @@ export async function buildCatalogIndex(): Promise<CatalogSearchItem[]> {
       href: KIND_ROUTE.tools,
       url: row.url ?? row.github,
       logo: row.logo,
-    })
-  }
-  for (const row of repos) {
-    items.push({
-      id: `repos:${row.github}`,
-      kind: 'repos',
-      label: row.repo,
-      subtitle: row.owner,
-      description: row.description,
-      href: KIND_ROUTE.repos,
-      url: row.github,
     })
   }
   for (const row of companies) {
@@ -202,7 +186,6 @@ export function categoryPathToHref(path: string): string {
   if (p.includes('model')) return '/models'
   if (p.includes('compan')) return '/companies'
   if (p.includes('code') || p.includes('cli')) return '/code'
-  if (p.includes('repo') || p.includes('github')) return '/repos'
-  if (p.includes('tool')) return '/tools'
+  if (p.includes('tool') || p.includes('repo') || p.includes('github')) return '/tools'
   return '/tools'
 }

@@ -5,7 +5,6 @@ import { seoRoutes, type SeoRoute } from '../src/data/seo-routes'
 import { skills } from '../src/data/skills'
 import { mcp } from '../src/data/mcp'
 import { tools } from '../src/data/tools'
-import { repos } from '../src/data/repos'
 import { companies } from '../src/data/companies'
 import { models } from '../src/data/models'
 import { code } from '../src/data/code'
@@ -156,15 +155,6 @@ function catalogFor(routeName: string): { columns: Column[]; rows: Record<string
         ],
         rows: sortRows(tools as unknown as Record<string, unknown>[], 'owner'),
       }
-    case 'repos':
-      return {
-        columns: [
-          { key: 'owner', label: 'Owner', type: 'brand' },
-          { key: 'repo', label: 'Repo', type: 'named-link' },
-          { key: 'description', label: 'Description' },
-        ],
-        rows: sortRows(repos as unknown as Record<string, unknown>[], 'owner'),
-      }
     case 'companies':
       return {
         columns: [
@@ -258,7 +248,7 @@ function replaceJsonLd(html: string, siteUrl: string, route: SeoRoute): string {
         name: 'AIPedia',
         url: `${siteUrl}/`,
         description:
-          'A public AI knowledge encyclopedia with catalogs of skills, MCP, tools, repos, companies, models, code, and chatbots.',
+          'A public AI knowledge encyclopedia with catalogs of skills, MCP, tools, companies, models, code, and chatbots.',
         inLanguage: 'en',
         author: {
           '@type': 'Person',

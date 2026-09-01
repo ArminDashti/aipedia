@@ -8,7 +8,7 @@ export type SeoRoute = {
 }
 
 export const DEFAULT_SEO_DESCRIPTION =
-  'AIPedia is a public AI knowledge encyclopedia. Browse catalogs of skills, MCP servers, tools, repos, companies, models, code editors, and chatbots.'
+  'AIPedia is a public AI knowledge encyclopedia. Browse catalogs of skills, MCP servers, tools, companies, models, code editors, and chatbots.'
 
 export const seoRoutes: SeoRoute[] = [
   {
@@ -37,15 +37,6 @@ export const seoRoutes: SeoRoute[] = [
       'AI tools for agents, memory, RAG, compression, and vector databases — browsable on AIPedia.',
     heading: 'Tools',
     pageDescription: 'Agents, memory, RAG, compression, and vector databases.',
-  },
-  {
-    path: '/repos',
-    name: 'repos',
-    title: 'Repos — AIPedia',
-    description:
-      'Unique GitHub repositories from the AIPedia bookmarks catalog for AI engineering.',
-    heading: 'Repos',
-    pageDescription: 'Unique GitHub repositories referenced across the AIPedia bookmarks catalog.',
   },
   {
     path: '/companies',

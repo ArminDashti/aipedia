@@ -24,7 +24,6 @@ const navItems = [
   { to: '/companies', label: 'Companies' },
   { to: '/mcp', label: 'MCP' },
   { to: '/models', label: 'Models' },
-  { to: '/repos', label: 'Repos' },
   { to: '/skills', label: 'Skills' },
   { to: '/tools', label: 'Tools' },
 ] as const

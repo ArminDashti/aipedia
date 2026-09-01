@@ -7,6 +7,13 @@ export type LinkRow = {
   logo?: string
 }
 
+export type CatalogSection<T extends LinkRow = LinkRow> = {
+  id: string
+  title: string
+  description?: string
+  rows: T[]
+}
+
 export type CompanyRow = {
   logo: string
   company: string
@@ -50,11 +57,4 @@ export type ChatBotRow = {
   freePlan: boolean
   paidPlan: boolean
   url?: string
-}
-
-export type RepoRow = {
-  owner: string
-  repo: string
-  description: string
-  github: string
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CatalogTable from '@/components/CatalogTable.vue'
-import { skills } from '@/data/skills'
+import CatalogSections from '@/components/CatalogSections.vue'
+import { skillSections } from '@/data/skills'
 
 const columns = [
   { key: 'owner', label: 'Owner', type: 'brand' as const },
@@ -10,12 +10,11 @@ const columns = [
 </script>
 
 <template>
-  <CatalogTable
+  <CatalogSections
     title="Skills"
-    description="Agent skills and instruction packs for coding agents."
+    description="Agent skills and instruction packs for coding agents, grouped by topic."
     :columns="columns"
-    :rows="skills"
+    :sections="skillSections"
     initial-sort-key="owner"
-    initial-sort-dir="asc"
   />
 </template>

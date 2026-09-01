@@ -5,7 +5,6 @@ import { getAdminToken } from '@/lib/api'
 import SkillsView from '@/views/SkillsView.vue'
 import McpView from '@/views/McpView.vue'
 import ToolsView from '@/views/ToolsView.vue'
-import ReposView from '@/views/ReposView.vue'
 import CompaniesView from '@/views/CompaniesView.vue'
 import ModelsView from '@/views/ModelsView.vue'
 import CodeView from '@/views/CodeView.vue'
@@ -17,7 +16,6 @@ const viewByName = {
   skills: SkillsView,
   mcp: McpView,
   tools: ToolsView,
-  repos: ReposView,
   companies: CompaniesView,
   models: ModelsView,
   code: CodeView,
@@ -36,6 +34,10 @@ const router = createRouter({
     {
       path: '/',
       redirect: () => (isAdminHost() ? '/admin' : '/skills'),
+    },
+    {
+      path: '/repos',
+      redirect: '/tools',
     },
     ...seoRoutes.map((route) => ({
       path: route.path,
