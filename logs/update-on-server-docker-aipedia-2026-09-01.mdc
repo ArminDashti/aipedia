@@ -1,0 +1,53 @@
+# update-on-server-docker — aipedia
+
+| Field | Value |
+|-------|-------|
+| project | C:/Users/armin/GitHub/aipedia |
+| stack_name | aipedia |
+| script | .armin/scripts/update-on-docker-server.ps1 |
+| volume_dir | /cloud-admin/docker/aipedia |
+| ssh | ssh t3 -p 443 |
+| result | success (exit 0) |
+
+## Containers after update
+
+```
+aipedia-api     Up   aipedia-api:latest     8091/tcp
+aipedia-webui   Up   aipedia-webui:latest   80/tcp
+aipedia-pgsql   Up   postgres:16-alpine     (orphan — not in compose.t3.yml)
+```
+
+## Verification
+
+- `aipedia-api` log: listening on :8091
+- `curl --resolve aipedia.xaigrok.ir:443:127.0.0.1 https://aipedia.xaigrok.ir/` → 200
+- SQLite volume `aipedia-sqlite-vol` preserved (`delete_volume: no`)
+
+## Notes
+
+- Update scripts did not exist; created dual-image update pair under `.armin/scripts/`.
+- Built images locally, uploaded via SCP, remote compose up with `--force-recreate`.
+
+---
+
+## 2026-09-01 — tool category buttons + single grid
+
+| Field | Value |
+|-------|-------|
+| change | Tools categorized into 8 sections; CatalogSections uses category buttons + one grid |
+| script | .armin/scripts/update-on-docker-server.ps1 |
+| result | success (exit 0) |
+
+### Containers after update
+
+```
+aipedia-api     Up   aipedia-api:latest
+aipedia-webui   Up   aipedia-webui:latest
+aipedia-pgsql   Up   postgres:16-alpine (orphan)
+```
+
+### Verification
+
+- `docker ps --filter name=aipedia` — api + webui running
+- webui nginx started cleanly
+- SQLite volume preserved (`delete_volume: no`)

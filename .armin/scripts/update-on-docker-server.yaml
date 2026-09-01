@@ -1,0 +1,16 @@
+stack_name: aipedia
+compose_file: ../../aipedia-api/docker-compose.t3.yml
+docker_network: t3-net
+delete_volume: "no"
+delete_image: "yes"
+build_image_on: "local"
+ssh: "ssh t3 -p 443"
+server: irancell-t3
+volume_dir: /cloud-admin/docker/aipedia
+domain: aipedia.xaigrok.ir
+api_image_tag: aipedia-api:latest
+webui_image_tag: aipedia-webui:latest
+api_dockerfile: ../../aipedia-api/dockerfile
+webui_dockerfile: ../../aipedia-webui/dockerfile
+api_build_context: ../../aipedia-api
+webui_build_context: ../../aipedia-webui
