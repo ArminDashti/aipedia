@@ -16,6 +16,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=ai-devkit.com&sz=32',
       },
       {
+        owner: 'botpress',
+        name: 'Botpress v12',
+        description:
+          'Open-source Botpress v12 chatbot platform for building and running conversational bots',
+        github: 'https://github.com/botpress/v12',
+        url: 'https://v12.botpress.com',
+        logo: 'https://www.google.com/s2/favicons?domain=botpress.com&sz=32',
+      },
+      {
         owner: 'Coasty',
         name: 'Coasty',
         description:
@@ -39,6 +48,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/cursor/cookbook',
         url: 'https://github.com/cursor/cookbook/tree/main/sdk/agent-kanban',
         logo: 'https://www.google.com/s2/favicons?domain=cursor.com&sz=32',
+      },
+      {
+        owner: 'langgenius',
+        name: 'Dify',
+        description:
+          'Collaborative workspace for agentic workflows and RAG pipelines with multi-model and tool support',
+        github: 'https://github.com/langgenius/dify',
+        url: 'https://dify.ai',
+        logo: 'https://www.google.com/s2/favicons?domain=dify.ai&sz=32',
       },
       {
         owner: 'lobehub',
@@ -66,6 +84,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/OpenHands',
         url: 'https://www.openhands.dev/',
         logo: 'https://www.google.com/s2/favicons?domain=openhands.dev&sz=32',
+      },
+      {
+        owner: 'RasaHQ',
+        name: 'Rasa',
+        description:
+          'Open-source ML framework for text and voice bots: NLU, dialogue management, and channel connectors',
+        github: 'https://github.com/RasaHQ/rasa',
+        url: 'https://rasa.com/docs/rasa/',
+        logo: 'https://www.google.com/s2/favicons?domain=rasa.com&sz=32',
       },
     ],
   },
@@ -352,6 +379,14 @@ export const toolSections: CatalogSection[] = [
     title: 'Dev Tooling',
     description: 'Compilers, spec workflows, and agent-oriented development kits.',
     rows: [
+      {
+        owner: 'anyrobert',
+        name: 'Cursor API Proxy',
+        description:
+          'API proxy that serves OpenAI-compatible endpoints backed by the Cursor agent CLI',
+        github: 'https://github.com/anyrobert/cursor-api-proxy',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
       {
         owner: 'microsoft',
         name: 'Roslyn',
