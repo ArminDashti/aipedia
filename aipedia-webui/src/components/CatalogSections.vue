@@ -35,11 +35,6 @@ const activeDescription = computed(() => {
 
 <template>
   <div class="flex flex-1 flex-col gap-6">
-    <header class="space-y-1">
-      <h1 class="text-2xl font-semibold tracking-tight">{{ title }}</h1>
-      <p v-if="description" class="text-sm text-muted-foreground">{{ description }}</p>
-    </header>
-
     <div class="flex flex-wrap gap-2" role="tablist" :aria-label="`${title} categories`">
       <Button
         :variant="activeSectionId === ALL_ID ? 'default' : 'outline'"

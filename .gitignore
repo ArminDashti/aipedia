@@ -1,4 +1,4 @@
-# Default ignores
+﻿# Default ignores
 *.exe
 
 # --- auto-managed by github-commit-push-all ---
@@ -6,3 +6,6 @@
 # large files (>5MB) - do not commit
 aipedia-api/bin/import-bookmarks.exe
 aipedia-api/bin/server.exe
+aipedia-api/bin/
+*.sqlite
+*.sqlite-journal

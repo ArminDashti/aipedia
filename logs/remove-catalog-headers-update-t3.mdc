@@ -1,0 +1,29 @@
+# Remove catalog page headers + update aipedia on T3
+
+| Field | Value |
+|-------|-------|
+| timestamp | 2026-09-05 09:44 (+03:30) |
+| project | C:/Users/armin/GitHub/aipedia |
+| stack_name | aipedia |
+| script | .armin/scripts/update-on-docker-server.ps1 |
+| ssh | port 443 (MCP :22 timed out; key `id_ed25519_cloud-admin_2-144-27-74`) |
+| result | success (exit 0) |
+
+## Code changes
+
+- Removed page `<header>` with `h1`/`p` from `aipedia-webui/src/components/CatalogSections.vue`
+- Removed page `<header>` with `h1`/`p` from `aipedia-webui/src/components/CatalogTable.vue`
+
+## Containers after update
+
+```
+aipedia-webui   Up   aipedia-webui:latest
+aipedia-api     Up   aipedia-api:latest
+aipedia-pgsql   Up   postgres:16-alpine (orphan)
+```
+
+## Verification
+
+- webui nginx started cleanly
+- `curl --resolve aipedia.xaigrok.ir:443:127.0.0.1 https://aipedia.xaigrok.ir/` → 200
+- SQLite volume preserved (`delete_volume: no`)

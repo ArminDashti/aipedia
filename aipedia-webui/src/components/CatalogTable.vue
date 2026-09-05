@@ -175,11 +175,6 @@ function sortIndicator(column: CatalogColumn): string {
 
 <template>
   <section class="flex flex-1 flex-col gap-4">
-    <header v-if="!bare" class="space-y-1">
-      <h1 class="text-2xl font-semibold tracking-tight">{{ title }}</h1>
-      <p v-if="description" class="text-sm text-muted-foreground">{{ description }}</p>
-    </header>
-
     <div class="flex flex-wrap items-center gap-2">
       <label class="sr-only" for="catalog-filter-column">Column</label>
       <select
