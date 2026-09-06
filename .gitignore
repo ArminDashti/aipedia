@@ -1,6 +1,9 @@
 ﻿# Default ignores
 *.exe
 
+# Local dev server logs
+logs/*-dev.log
+
 # --- auto-managed by github-commit-push-all ---
 *.exe
 # large files (>5MB) - do not commit
