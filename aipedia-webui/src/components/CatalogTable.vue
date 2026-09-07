@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { companyHomeUrl, companyIconSrc, companyLetter } from '@/data/company-icons'
+import {
+  companyHomeUrl,
+  companyIconIsMono,
+  companyIconSrc,
+  companyLetter,
+} from '@/data/company-icons'
 
 export type CatalogColumn = {
   key: string
@@ -89,6 +94,11 @@ function brandIcon(row: Record<string, unknown>, columnKey: string): string | nu
   if (fromMap) return fromMap
   const logo = asLink(row.logo)
   return logo
+}
+
+function brandIconClass(row: Record<string, unknown>, columnKey: string): string {
+  const base = 'size-6 bg-transparent object-contain'
+  return companyIconIsMono(brandName(row, columnKey)) ? `${base} dark:invert` : base
 }
 
 function brandHref(row: Record<string, unknown>, columnKey: string): string | null {
@@ -253,7 +263,7 @@ function sortIndicator(column: CatalogColumn): string {
                     alt=""
                     width="24"
                     height="24"
-                    class="size-6 bg-transparent object-contain"
+                    :class="brandIconClass(row, column.key)"
                     loading="lazy"
                   />
                   <span
