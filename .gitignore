@@ -9,3 +9,5 @@ aipedia-api/bin/server.exe
 aipedia-api/bin/
 *.sqlite
 *.sqlite-journal
+
+# AUTO-LARGE-FILES (>5MB) — managed by commit-push-to-github
