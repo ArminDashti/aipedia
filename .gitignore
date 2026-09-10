@@ -1,4 +1,4 @@
-﻿# Default ignores
+# Default ignores
 *.exe
 
 # --- auto-managed by github-commit-push-all ---
@@ -9,3 +9,4 @@ aipedia-api/bin/server.exe
 aipedia-api/bin/
 *.sqlite
 *.sqlite-journal
+# === auto: large files (>5MB) ===
