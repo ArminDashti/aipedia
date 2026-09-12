@@ -10,3 +10,5 @@ aipedia-api/bin/
 *.sqlite
 *.sqlite-journal
 # === auto: large files (>5MB) ===
+
+# === commit-push-to-github large files (auto) ===
