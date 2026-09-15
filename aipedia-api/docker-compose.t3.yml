@@ -10,6 +10,7 @@ services:
       ADDR: ":8091"
       DATABASE_URL: /data/aipedia.db
       MIGRATIONS_DIR: /app/migrations
+      UPLOAD_DIR: /data/uploads
       GIN_MODE: release
     volumes:
       - aipedia-sqlite-vol:/data

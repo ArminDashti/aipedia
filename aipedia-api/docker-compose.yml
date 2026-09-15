@@ -7,6 +7,7 @@ services:
       ADDR: ":${INTERNAL_PORT:-8091}"
       DATABASE_URL: /data/aipedia.db
       MIGRATIONS_DIR: /app/migrations
+      UPLOAD_DIR: /data/uploads
       GIN_MODE: release
     volumes:
       - aipedia_sqlite_data:/data

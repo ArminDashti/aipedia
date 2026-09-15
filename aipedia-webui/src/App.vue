@@ -4,18 +4,14 @@ import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import GlobalSearch from '@/components/GlobalSearch.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
+import { isAdminHost } from '@/lib/admin-host'
 import { useTheme } from '@/composables/useTheme'
 
 const { theme, toggleTheme } = useTheme()
 const route = useRoute()
 
-const isAdminHost =
-  typeof window !== 'undefined' &&
-  (window.location.hostname === 'admin-aipedia.xaigrok.ir' ||
-    window.location.hostname.startsWith('admin-aipedia.'))
-
 const isAdminSection = computed(
-  () => isAdminHost || route.path.startsWith('/admin'),
+  () => isAdminHost() || route.path.startsWith('/admin'),
 )
 
 const navItems = [

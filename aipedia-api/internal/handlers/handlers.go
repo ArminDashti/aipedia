@@ -12,12 +12,13 @@ import (
 
 // Handlers groups HTTP handlers.
 type Handlers struct {
-	db *sql.DB
+	db        *sql.DB
+	uploadDir string
 }
 
 // New creates Handlers.
-func New(db *sql.DB) *Handlers {
-	return &Handlers{db: db}
+func New(db *sql.DB, uploadDir string) *Handlers {
+	return &Handlers{db: db, uploadDir: uploadDir}
 }
 
 // Health returns liveness and database ping status.

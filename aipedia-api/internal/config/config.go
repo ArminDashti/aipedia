@@ -41,6 +41,7 @@ type Config struct {
 	Addr          string
 	DatabaseURL   string
 	MigrationsDir string
+	UploadDir     string
 }
 
 // Load reads configuration from environment variables.
@@ -49,6 +50,7 @@ func Load() Config {
 		Addr:          envOr("ADDR", ":8091"),
 		DatabaseURL:   os.Getenv("DATABASE_URL"),
 		MigrationsDir: envOr("MIGRATIONS_DIR", "migrations"),
+		UploadDir:     envOr("UPLOAD_DIR", "/data/uploads"),
 	}
 }
 

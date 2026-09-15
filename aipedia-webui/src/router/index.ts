@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { applyRouteSeo } from '@/lib/seo'
 import { seoRoutes, DEFAULT_SEO_DESCRIPTION } from '@/data/seo-routes'
+import { isAdminHost } from '@/lib/admin-host'
 import { getAdminToken } from '@/lib/api'
 import SkillsView from '@/views/SkillsView.vue'
 import McpView from '@/views/McpView.vue'
@@ -21,12 +22,6 @@ const viewByName = {
   code: CodeView,
   chatbots: ChatBotsView,
 } as const
-
-function isAdminHost(): boolean {
-  if (typeof window === 'undefined') return false
-  const host = window.location.hostname
-  return host === 'admin-aipedia.xaigrok.ir' || host.startsWith('admin-aipedia.')
-}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
