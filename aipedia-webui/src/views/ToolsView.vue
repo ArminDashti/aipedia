@@ -12,7 +12,7 @@ const columns = [
 <template>
   <CatalogSections
     title="Tools"
-    description="Agents, memory, RAG, compression, and vector databases — grouped by purpose."
+    description="Agents, memory, RAG, gateways, observability, and vector databases — grouped by purpose."
     :columns="columns"
     :sections="toolSections"
     initial-sort-key="owner"

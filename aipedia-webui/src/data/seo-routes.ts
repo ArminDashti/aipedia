@@ -34,9 +34,9 @@ export const seoRoutes: SeoRoute[] = [
     name: 'tools',
     title: 'Tools — AIPedia',
     description:
-      'AI tools for agents, memory, RAG, compression, and vector databases — browsable on AIPedia.',
+      'AI tools for agents, memory, RAG, inference gateways, observability, and vector databases — browsable on AIPedia.',
     heading: 'Tools',
-    pageDescription: 'Agents, memory, RAG, compression, and vector databases.',
+    pageDescription: 'Agents, memory, RAG, gateways, observability, and vector databases.',
   },
   {
     path: '/companies',

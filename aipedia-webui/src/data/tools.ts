@@ -42,6 +42,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=crewai.com&sz=32',
       },
       {
+        owner: 'codegen-sh',
+        name: 'Codegen',
+        description:
+          'Enterprise orchestration platform for AI coding agents with governance and audit trails; now part of ClickUp',
+        github: 'https://github.com/codegen-sh',
+        url: 'https://codegen.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=codegen.com&sz=32',
+      },
+      {
         owner: 'cursor',
         name: 'Cursor Agent Kanban',
         description: 'Cursor cookbook sample: multi-agent kanban board built with the Cursor SDK',
@@ -57,6 +66,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/langgenius/dify',
         url: 'https://dify.ai',
         logo: 'https://www.google.com/s2/favicons?domain=dify.ai&sz=32',
+      },
+      {
+        owner: 'Factory',
+        name: 'Factory Droids',
+        description:
+          'Agent-native development platform; Droids plan, build, and ship work from CLI, chat, and CI',
+        github: null,
+        url: 'https://factory.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=factory.com&sz=32',
       },
       {
         owner: 'lobehub',
@@ -93,6 +111,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/RasaHQ/rasa',
         url: 'https://rasa.com/docs/rasa/',
         logo: 'https://www.google.com/s2/favicons?domain=rasa.com&sz=32',
+      },
+      {
+        owner: 'RooCodeInc',
+        name: 'Roomote',
+        description:
+          'Source-available cloud coding agent that runs in your own environment and opens verified pull requests',
+        github: 'https://github.com/RooCodeInc/Roomote',
+        url: 'https://roomote.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=roomote.dev&sz=32',
       },
     ],
   },
@@ -402,6 +429,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/github/spec-kit',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
+      {
+        owner: 'eclipse-theia',
+        name: 'Theia Platform',
+        description:
+          'Vendor-neutral framework for building custom AI-native IDEs and tools for desktop and cloud',
+        github: 'https://github.com/eclipse-theia/theia',
+        url: 'https://theia-ide.org/',
+        logo: 'https://www.google.com/s2/favicons?domain=theia-ide.org&sz=32',
+      },
     ],
   },
   {
@@ -424,6 +460,139 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/open-webui/open-webui',
         url: 'https://openwebui.com/',
         logo: 'https://www.google.com/s2/favicons?domain=openwebui.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'gateways',
+    title: 'Gateways & Inference',
+    description: 'LLM routers, proxies, and hosted inference platforms.',
+    rows: [
+      {
+        owner: 'BerriAI',
+        name: 'LiteLLM',
+        description:
+          'Gateway and Python SDK that puts 100+ LLMs behind one OpenAI-compatible API with keys, budgets, and routing',
+        github: 'https://github.com/BerriAI/litellm',
+        url: 'https://litellm.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=litellm.ai&sz=32',
+        categories: ['dev'],
+      },
+      {
+        owner: 'togethercomputer',
+        name: 'Together AI',
+        description:
+          'Serverless and dedicated inference for open-weight models, plus GPU clusters and fine-tuning',
+        github: 'https://github.com/togethercomputer',
+        url: 'https://www.together.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=together.ai&sz=32',
+      },
+      {
+        owner: 'cerebras',
+        name: 'Cerebras Inference',
+        description:
+          'Fast inference API for open models served from wafer-scale CS-3 and CS-4 systems',
+        github: 'https://github.com/Cerebras',
+        url: 'https://www.cerebras.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=cerebras.ai&sz=32',
+      },
+      {
+        owner: 'NVIDIA',
+        name: 'NVIDIA NIM',
+        description: 'Optimized inference microservices and hosted model endpoints on build.nvidia.com',
+        github: 'https://github.com/NVIDIA',
+        url: 'https://build.nvidia.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=32',
+      },
+      {
+        owner: 'PrismML-Eng',
+        name: 'PrismML',
+        description:
+          'Ternary and 1-bit Bonsai models for local inference; Bonsai 2 27B ships as a 5.9 GB GGUF',
+        github: 'https://github.com/PrismML-Eng',
+        url: 'https://prismml.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=prismml.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'observability',
+    title: 'Observability & Code Review',
+    description: 'Usage analytics, tracing, and automated pull-request review.',
+    rows: [
+      {
+        owner: 'greptileai',
+        name: 'Greptile',
+        description:
+          'AI reviewer that indexes a codebase into a graph and reviews pull requests with that context',
+        github: 'https://github.com/greptileai',
+        url: 'https://www.greptile.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=greptile.com&sz=32',
+        categories: ['agents'],
+      },
+      {
+        owner: 'HamedMP',
+        name: 'CursorLens',
+        description: 'Self-hosted proxy and dashboard that logs Cursor generations, token usage, and cost',
+        github: 'https://github.com/HamedMP/CursorLens',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'future-agi',
+        name: 'traceAI',
+        description:
+          'OpenTelemetry-native tracing for LLM and agent apps in Python, TypeScript, Java, and C#',
+        github: 'https://github.com/future-agi/traceAI',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+        categories: ['dev'],
+      },
+    ],
+  },
+  {
+    id: 'evals',
+    title: 'Evaluation & Benchmarks',
+    description: 'Leaderboards and head-to-head model evaluation.',
+    rows: [
+      {
+        owner: 'Arena Intelligence',
+        name: 'Arena AI',
+        description:
+          'LLM leaderboard and arena where models compete head-to-head on human-voted prompts; formerly LMArena',
+        github: null,
+        url: 'https://arena.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=arena.ai&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'standards',
+    title: 'Specs & Standards',
+    description: 'Shared conventions that coding agents and harnesses read.',
+    rows: [
+      {
+        owner: 'agentsmd',
+        name: 'AGENTS.md',
+        description:
+          'Open Markdown format that gives coding agents repo-specific instructions; no required fields',
+        github: 'https://github.com/agentsmd/agents.md',
+        url: 'https://agents.md/',
+        logo: 'https://www.google.com/s2/favicons?domain=agents.md&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'media',
+    title: 'Media & Creative',
+    description: 'Generation workspaces for image, video, audio, and 3D.',
+    rows: [
+      {
+        owner: 'MuseSpark AI',
+        name: 'MuseSpark',
+        description:
+          'AI generation workspace spanning image, video, audio, 3D, and text models behind one subscription',
+        github: null,
+        url: 'https://musespark.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=musespark.ai&sz=32',
       },
     ],
   },

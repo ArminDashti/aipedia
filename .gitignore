@@ -14,3 +14,6 @@ aipedia-api/bin/
 # === commit-push-to-github large files (auto) ===
 
 # commit-push-to-github: large files (>5MB) auto-ignored
+
+# BEGIN AUTO-IGNORE LARGE FILES (>5MB; managed by commit-push-to-github)
+# END AUTO-IGNORE LARGE FILES

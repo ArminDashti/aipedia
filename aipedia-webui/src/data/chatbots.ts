@@ -81,4 +81,28 @@ export const chatbots: ChatBotRow[] = [
     paidPlan: true,
     url: 'https://poe.com',
   },
+  {
+    logo: 'https://www.google.com/s2/favicons?domain=moonshot.ai&sz=32',
+    owner: 'Moonshot AI',
+    chatbot: 'Kimi',
+    freePlan: true,
+    paidPlan: true,
+    url: 'https://www.kimi.com',
+  },
+  {
+    logo: 'https://www.google.com/s2/favicons?domain=z.ai&sz=32',
+    owner: 'Z.ai',
+    chatbot: 'Z.ai',
+    freePlan: true,
+    paidPlan: true,
+    url: 'https://chat.z.ai',
+  },
+  {
+    logo: 'https://www.google.com/s2/favicons?domain=inceptionlabs.ai&sz=32',
+    owner: 'Inception Labs',
+    chatbot: 'Mercury Chat',
+    freePlan: true,
+    paidPlan: false,
+    url: 'https://chat.inceptionlabs.ai',
+  },
 ]

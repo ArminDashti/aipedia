@@ -238,6 +238,14 @@ export const skillSections: CatalogSection[] = [
         url: 'https://www.skills.sh/',
         logo: 'https://www.google.com/s2/favicons?domain=skills.sh&sz=32',
       },
+      {
+        owner: 'NVIDIA',
+        name: 'NVIDIA Skills',
+        description: 'Catalog of NVIDIA-verified agent skills, installed with `npx skills add NVIDIA/skills`',
+        github: 'https://github.com/NVIDIA/skills',
+        url: 'https://build.nvidia.com/skills',
+        logo: 'https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=32',
+      },
     ],
   },
 ]

@@ -5,6 +5,11 @@ export type LinkRow = {
   github: string | null
   url?: string
   logo?: string
+  /**
+   * Extra catalog section ids this row is cross-listed under. The section that
+   * lists the row in its `rows` array stays its primary category.
+   */
+  categories?: string[]
 }
 
 export type CatalogSection<T extends LinkRow = LinkRow> = {
