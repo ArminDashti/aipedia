@@ -104,6 +104,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=openhands.dev&sz=32',
       },
       {
+        owner: 'pydantic',
+        name: 'Pydantic AI',
+        description:
+          'Python agent framework: typed agent loop with structured outputs and dependency injection; Graph, Evals, and voice add-ons',
+        github: 'https://github.com/pydantic/pydantic-ai',
+        url: 'https://pydantic.dev/docs/ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=pydantic.dev&sz=32',
+      },
+      {
         owner: 'RasaHQ',
         name: 'Rasa',
         description:
@@ -121,6 +130,15 @@ export const toolSections: CatalogSection[] = [
         url: 'https://roomote.dev/',
         logo: 'https://www.google.com/s2/favicons?domain=roomote.dev&sz=32',
       },
+      {
+        owner: 'tinyhumansai',
+        name: 'TinyHumans',
+        description:
+          'Local-first open-source AI agents: OpenHuman for private research, OpenCompany for evidence-based decisions, and Medulla multi-agent terminal',
+        github: 'https://github.com/tinyhumansai',
+        url: 'https://tinyhumans.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=tinyhumans.ai&sz=32',
+      },
     ],
   },
   {
@@ -128,6 +146,14 @@ export const toolSections: CatalogSection[] = [
     title: 'Memory',
     description: 'Persistent context, knowledge graphs, and session memory for agents.',
     rows: [
+      {
+        owner: 'rohitg00',
+        name: 'AgentMemory',
+        description:
+          'Persistent memory for coding agents (Claude Code, Copilot CLI, Cursor, Gemini CLI): hook-based capture, compression, and cross-session injection',
+        github: 'https://github.com/rohitg00/agentmemory',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
       {
         owner: 'DeusData',
         name: 'Codebase Memory MCP',
@@ -346,6 +372,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=repomix.com&sz=32',
       },
       {
+        owner: 'manojmallick',
+        name: 'Sigmap',
+        description:
+          'CLI that maps a codebase so AI coding assistants only receive the most relevant files; 30+ languages, offline, with MCP and IDE integration',
+        github: 'https://github.com/manojmallick/sigmap',
+        url: 'https://sigmap.io/',
+        logo: 'https://www.google.com/s2/favicons?domain=sigmap.io&sz=32',
+      },
+      {
         owner: 'mohsen1',
         name: 'yek',
         description:
@@ -512,6 +547,24 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/PrismML-Eng',
         url: 'https://prismml.com/',
         logo: 'https://www.google.com/s2/favicons?domain=prismml.com&sz=32',
+      },
+      {
+        owner: 'GooseAI',
+        name: 'GooseAI',
+        description:
+          'Fully managed OpenAI-compatible NLP inference API from CoreWeave and Anlatan; tiered per-request pricing',
+        github: null,
+        url: 'https://goose.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=goose.ai&sz=32',
+      },
+      {
+        owner: 'Tetrate',
+        name: 'Tetrate',
+        description:
+          'Enterprise AI gateways: Agent Router, AI and MCP gateways, and guardrails with spend attribution by team and agent',
+        github: 'https://github.com/tetrateio',
+        url: 'https://tetrate.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=tetrate.ai&sz=32',
       },
     ],
   },

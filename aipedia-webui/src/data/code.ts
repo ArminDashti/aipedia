@@ -2,6 +2,17 @@ import type { CodeRow } from './types'
 
 export const code: CodeRow[] = [
   {
+    logo: 'https://www.google.com/s2/favicons?domain=aider.chat&sz=32',
+    code: 'Aider',
+    owner: 'Aider AI',
+    byok: true,
+    freePlan: true,
+    paidPlan: false,
+    cli: true,
+    editor: false,
+    url: 'https://aider.chat',
+  },
+  {
     logo: 'https://www.google.com/s2/favicons?domain=ampcode.com&sz=32',
     code: 'Amp',
     owner: 'Amp Frontier',
@@ -211,17 +222,6 @@ export const code: CodeRow[] = [
     url: 'https://poolside.ai',
   },
   {
-    logo: 'https://www.google.com/s2/favicons?domain=openhands.dev&sz=32',
-    code: 'OpenHands',
-    owner: 'All Hands AI',
-    byok: true,
-    freePlan: true,
-    paidPlan: true,
-    cli: true,
-    editor: false,
-    url: 'https://www.openhands.dev',
-  },
-  {
     logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
     code: 'Qwen Code',
     owner: 'Alibaba',
@@ -286,5 +286,16 @@ export const code: CodeRow[] = [
     cli: false,
     editor: true,
     url: 'https://zed.dev',
+  },
+  {
+    logo: 'https://www.google.com/s2/favicons?domain=zoocode.dev&sz=32',
+    code: 'Zoo Code',
+    owner: 'Zoo',
+    byok: true,
+    freePlan: true,
+    paidPlan: true,
+    cli: false,
+    editor: true,
+    url: 'https://zoocode.dev',
   },
 ]
