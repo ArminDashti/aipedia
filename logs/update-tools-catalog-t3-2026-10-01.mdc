@@ -1,0 +1,30 @@
+# Update aipedia tools catalog on Irancell-T3
+
+| Field | Value |
+|-------|-------|
+| project | C:/Users/armin/GitHub/aipedia |
+| host | t3-new (`2.144.27.124`) via `ssh t3 -p 443` |
+| script | `.armin/scripts/update-on-docker-server.ps1` |
+| result | success (exit 0) |
+
+## Catalog Δ (`aipedia-webui/src/data/tools.ts`)
+
+**Added (19):** Agno, Ant Ling, AutoGen, Cloudflare Agents, DeepSeek Harness, LangGraph, Loop Engineering, Mastra, OpenBot, Semantic Kernel, SmythOS Studio, Awesome Agent Orchestration, Awesome Harness Engineering, Awesome Agent Memory, Awesome Context Engineering, Awesome Agent Observability, Awesome Evals, Awesome AI Guardrails
+
+**Skipped (already present):** CrewAI, Dify, Pydantic AI, `modelcontextprotocol/servers` (MCP Memory + mcp.ts)
+
+## Build unblocker
+
+Excluded `src/**/*.test.ts` from `tsconfig.app.json` so Docker `vue-tsc` no longer fails on missing `vitest`.
+
+## Containers after update
+
+```
+aipedia-api     Up
+aipedia-webui   Up
+```
+
+## Verification
+
+- `curl --resolve aipedia.xaigrok.ir:443:127.0.0.1 https://aipedia.xaigrok.ir/` → 200
+- webui bundle contains new catalog names

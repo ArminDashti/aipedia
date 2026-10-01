@@ -139,6 +139,120 @@ export const toolSections: CatalogSection[] = [
         url: 'https://tinyhumans.ai/',
         logo: 'https://www.google.com/s2/favicons?domain=tinyhumans.ai&sz=32',
       },
+      {
+        owner: 'agno-agi',
+        name: 'Agno',
+        description:
+          'Framework and AgentOS runtime to build, run, and manage agent platforms with SDK, UI, and ownership of data/memory',
+        github: 'https://github.com/agno-agi/agno',
+        url: 'https://docs.agno.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=agno.com&sz=32',
+      },
+      {
+        owner: 'Ant Ling',
+        name: 'Ant Ling',
+        description:
+          'Agent workflow models and Open API (Ling-3.0-flash) for cost-efficient intelligent apps',
+        github: null,
+        url: 'https://www.ant-ling.com/en/',
+        logo: 'https://www.google.com/s2/favicons?domain=ant-ling.com&sz=32',
+      },
+      {
+        owner: 'microsoft',
+        name: 'AutoGen',
+        description:
+          'Programming framework for multi-agent orchestration; pioneered conversational agent patterns (maintenance mode)',
+        github: 'https://github.com/microsoft/autogen',
+        url: 'https://microsoft.github.io/autogen/',
+        logo: 'https://www.google.com/s2/favicons?domain=microsoft.com&sz=32',
+      },
+      {
+        owner: 'cloudflare',
+        name: 'Cloudflare Agents',
+        description:
+          'Build and deploy durable AI agents on Cloudflare Workers: hibernate/wake, MCP, workflows, websockets',
+        github: 'https://github.com/cloudflare/agents',
+        url: 'https://developers.cloudflare.com/agents/',
+        logo: 'https://www.google.com/s2/favicons?domain=cloudflare.com&sz=32',
+      },
+      {
+        owner: 'deepseek-ai',
+        name: 'DeepSeek Harness',
+        description:
+          'Open-source agent harness: everything is a Cordis plugin; append-only session log, desktop/web UI, trajectory inspect',
+        github: 'https://github.com/deepseek-ai/deepseek-harness',
+        url: 'https://deepseek.com/en/harness/',
+        logo: 'https://www.google.com/s2/favicons?domain=deepseek.com&sz=32',
+      },
+      {
+        owner: 'langchain-ai',
+        name: 'LangGraph',
+        description:
+          'Low-level orchestration for durable stateful agents: human-in-the-loop, memory, and production deploy',
+        github: 'https://github.com/langchain-ai/langgraph',
+        url: 'https://langchain-ai.github.io/langgraph/',
+        logo: 'https://www.google.com/s2/favicons?domain=langchain.com&sz=32',
+      },
+      {
+        owner: 'cobusgreyling',
+        name: 'Loop Engineering',
+        description:
+          'Practical patterns, starters, and CLI tools (loop-audit, loop-init, loop-cost) for agent loop design',
+        github: 'https://github.com/cobusgreyling/loop-engineering',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'mastra-ai',
+        name: 'Mastra',
+        description:
+          'TypeScript framework for AI apps and agents: model routing, workflows, memory, MCP, evals, observability',
+        github: 'https://github.com/mastra-ai/mastra',
+        url: 'https://mastra.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=mastra.ai&sz=32',
+      },
+      {
+        owner: 'OpenBot',
+        name: 'OpenBot',
+        description:
+          'Local shared workspace for AI agent teams; run Codex, Claude, Gemini, Grok on your machine with plugins',
+        github: null,
+        url: 'https://openbot.run/',
+        logo: 'https://www.google.com/s2/favicons?domain=openbot.run&sz=32',
+      },
+      {
+        owner: 'microsoft',
+        name: 'Semantic Kernel',
+        description:
+          'SDK to integrate LLMs into apps with agents, plugins, and planners across Python, .NET, and Java',
+        github: 'https://github.com/microsoft/semantic-kernel',
+        url: 'https://learn.microsoft.com/en-us/semantic-kernel/',
+        logo: 'https://www.google.com/s2/favicons?domain=microsoft.com&sz=32',
+      },
+      {
+        owner: 'SmythOS',
+        name: 'SmythOS Studio',
+        description:
+          'Open-source visual AI agent builder and deployable runtime; drag-and-drop workspace with governance',
+        github: 'https://github.com/SmythOS/smythos-studio',
+        url: 'https://smythos.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=smythos.com&sz=32',
+      },
+      {
+        owner: 'vivy-yi',
+        name: 'Awesome Agent Orchestration',
+        description:
+          'Curated list of multi-agent frameworks, swarm systems, A2A/MCP, and agentic workflows',
+        github: 'https://github.com/vivy-yi/awesome-agent-orchestration',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'walkinglabs',
+        name: 'Awesome Harness Engineering',
+        description:
+          'Curated tools and guides for harness engineering: shaping agent environments for reliable work',
+        github: 'https://github.com/walkinglabs/awesome-harness-engineering',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
     ],
   },
   {
@@ -249,6 +363,14 @@ export const toolSections: CatalogSection[] = [
         name: 'PMB',
         description: 'Local-first persistent memory for AI coding agents over MCP; SQLite-backed, offline',
         github: 'https://github.com/oleksiijko/pmb',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'mnemoverse',
+        name: 'Awesome Agent Memory',
+        description:
+          'Curated list of memory systems, frameworks, benchmarks, and research for AI agents',
+        github: 'https://github.com/mnemoverse/awesome-agent-memory',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
@@ -386,6 +508,14 @@ export const toolSections: CatalogSection[] = [
         description:
           'Fast Rust tool to serialize text-based files in a repo or directory for LLM consumption',
         github: 'https://github.com/mohsen1/yek',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'yzfly',
+        name: 'Awesome Context Engineering',
+        description:
+          'Curated resources, papers, tools, and practices for context engineering in agents and LLMs',
+        github: 'https://github.com/yzfly/awesome-context-engineering',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
@@ -599,6 +729,14 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
         categories: ['dev'],
       },
+      {
+        owner: 'anhermon',
+        name: 'Awesome Agent Observability',
+        description:
+          'Curated tools and standards for LLM/agent observability: OTel GenAI, tracing, evals, guardrails, MCP',
+        github: 'https://github.com/anhermon/awesome-agent-observability',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
     ],
   },
   {
@@ -615,6 +753,14 @@ export const toolSections: CatalogSection[] = [
         url: 'https://arena.ai/',
         logo: 'https://www.google.com/s2/favicons?domain=arena.ai&sz=32',
       },
+      {
+        owner: 'benchflow-ai',
+        name: 'Awesome Evals',
+        description:
+          'Annotated curated library of papers, blogs, talks, tools, and benchmarks for building and evaluating AI agents',
+        github: 'https://github.com/benchflow-ai/awesome-evals',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
     ],
   },
   {
@@ -630,6 +776,14 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/agentsmd/agents.md',
         url: 'https://agents.md/',
         logo: 'https://www.google.com/s2/favicons?domain=agents.md&sz=32',
+      },
+      {
+        owner: 'enguard-ai',
+        name: 'Awesome AI Guardrails',
+        description:
+          'Curated materials on AI guardrails: security/privacy, relevance, language quality, content and logic validation',
+        github: 'https://github.com/enguard-ai/awesome-ai-guardrails',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
   },
