@@ -253,6 +253,24 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/walkinglabs/awesome-harness-engineering',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
+      {
+        owner: 'ComposioHQ',
+        name: 'Composio',
+        description:
+          '1000+ toolkits with tool search, auth management, and a sandboxed workbench so agents turn intent into action',
+        github: 'https://github.com/ComposioHQ/composio',
+        url: 'https://composio.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=composio.dev&sz=32',
+      },
+      {
+        owner: 'e2b-dev',
+        name: 'E2B',
+        description:
+          'Open-source secure sandboxes with real-world tools for running enterprise-grade agents',
+        github: 'https://github.com/e2b-dev/E2B',
+        url: 'https://e2b.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=e2b.dev&sz=32',
+      },
     ],
   },
   {
@@ -626,6 +644,16 @@ export const toolSections: CatalogSection[] = [
         url: 'https://openwebui.com/',
         logo: 'https://www.google.com/s2/favicons?domain=openwebui.com&sz=32',
       },
+      {
+        owner: 'CopilotKit',
+        name: 'CopilotKit',
+        description:
+          'Frontend stack for agents and generative UI: React, Angular, mobile, and Slack; makers of the AG-UI protocol',
+        github: 'https://github.com/CopilotKit/CopilotKit',
+        url: 'https://www.copilotkit.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=copilotkit.ai&sz=32',
+        categories: ['agents'],
+      },
     ],
   },
   {
@@ -800,6 +828,38 @@ export const toolSections: CatalogSection[] = [
         github: null,
         url: 'https://musespark.ai/',
         logo: 'https://www.google.com/s2/favicons?domain=musespark.ai&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'web',
+    title: 'Web, Scraping & Browsing',
+    description: 'Scraping frameworks, stealth browser automation, and internet access for agents.',
+    rows: [
+      {
+        owner: 'Panniantong',
+        name: 'Agent Reach',
+        description:
+          'One CLI giving agents eyes on the internet: read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu with zero API fees',
+        github: 'https://github.com/Panniantong/Agent-Reach',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'whaleyxbt',
+        name: 'Patchright Enhanced',
+        description:
+          'Stealth browser automation toolkit for QA, monitoring, pentesting, and internal workflows; passes Cloudflare, Kasada, and DataDome out of the box',
+        github: 'https://github.com/whaleyxbt/patchright-enhanced',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'D4Vinci',
+        name: 'Scrapling',
+        description:
+          'Adaptive web scraping framework: undetectable fetches and smart proxies, from a single request to full-scale crawls',
+        github: 'https://github.com/d4vinci/Scrapling',
+        url: 'https://scrapling.readthedocs.io/en/latest/',
+        logo: 'https://www.google.com/s2/favicons?domain=scrapling.readthedocs.io&sz=32',
       },
     ],
   },
