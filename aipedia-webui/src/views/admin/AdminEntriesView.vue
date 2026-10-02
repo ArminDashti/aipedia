@@ -8,6 +8,7 @@ import {
   adminListCategories,
   adminListEntries,
   adminUpdateEntry,
+  adminUploadLogo,
   type ApiCategory,
   type ApiEntry,
   type EntryWriteBody,
@@ -23,6 +24,7 @@ const filter = ref('')
 const loading = ref(true)
 const error = ref('')
 const saving = ref(false)
+const uploadingLogo = ref(false)
 const editingId = ref<number | null>(null)
 const showForm = ref(false)
 
@@ -181,6 +183,23 @@ async function onLogout() {
   await signOut()
   await router.replace('/admin/login')
 }
+
+async function onLogoFileChange(ev: Event) {
+  const input = ev.target as HTMLInputElement
+  const file = input.files?.[0]
+  if (!file) return
+  uploadingLogo.value = true
+  error.value = ''
+  try {
+    const data = await adminUploadLogo(file)
+    form.logoUrl = data.logoUrl
+  } catch (err) {
+    error.value = err instanceof Error ? err.message : 'Logo upload failed'
+  } finally {
+    uploadingLogo.value = false
+    input.value = ''
+  }
+}
 </script>
 
 <template>
@@ -251,8 +270,25 @@ async function onLogout() {
           Name URL
           <input v-model="form.nameUrl" class="h-9 rounded-md border border-input bg-background px-3 text-sm" />
         </label>
-        <label class="flex flex-col gap-1 text-sm">
-          Logo URL
+        <label class="flex flex-col gap-1 text-sm sm:col-span-2">
+          Logo file
+          <input
+            type="file"
+            accept="image/png,image/jpeg,image/webp,image/gif"
+            class="text-sm file:mr-2 file:rounded-md file:border file:border-input file:bg-background file:px-2 file:py-1"
+            :disabled="uploadingLogo"
+            @change="onLogoFileChange"
+          />
+          <span v-if="uploadingLogo" class="text-xs text-muted-foreground">Uploading…</span>
+          <img
+            v-if="form.logoUrl"
+            :src="form.logoUrl"
+            alt="Logo preview"
+            class="mt-1 h-12 w-12 rounded object-contain border bg-background"
+          />
+        </label>
+        <label class="flex flex-col gap-1 text-sm sm:col-span-2">
+          Or paste logo URL
           <input v-model="form.logoUrl" class="h-9 rounded-md border border-input bg-background px-3 text-sm" />
         </label>
         <label class="flex flex-col gap-1 text-sm">

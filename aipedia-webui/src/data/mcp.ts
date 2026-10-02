@@ -77,6 +77,7 @@ export const mcpSections: CatalogSection[] = [
         description:
           '~97% token reduction for AI coding sessions; zero deps, 33 languages, MCP server',
         github: 'https://github.com/manojmallick/sigmap',
+        url: 'https://sigmap.io/',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],

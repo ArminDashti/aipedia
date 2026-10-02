@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import CatalogTable, { type CatalogColumn } from '@/components/CatalogTable.vue'
 import Button from '@/components/ui/button/Button.vue'
-import type { CatalogSection } from '@/data/types'
+import type { CatalogSection, LinkRow } from '@/data/types'
 
 const ALL_ID = '__all__'
 
@@ -20,11 +20,27 @@ const activeSection = computed(() =>
   props.sections.find((section) => section.id === activeSectionId.value) ?? null,
 )
 
+const allRows = computed(() => props.sections.flatMap((section) => section.rows))
+
+/** Section ids each row shows up under: the one that lists it plus any cross-listings. */
+const rowSectionIds = computed(() => {
+  const map = new Map<LinkRow, Set<string>>()
+  for (const section of props.sections) {
+    for (const row of section.rows) {
+      const ids = map.get(row) ?? new Set<string>()
+      ids.add(section.id)
+      for (const id of row.categories ?? []) ids.add(id)
+      map.set(row, ids)
+    }
+  }
+  return map
+})
+
 const displayedRows = computed(() => {
   if (activeSectionId.value === ALL_ID) {
-    return props.sections.flatMap((section) => section.rows)
+    return allRows.value
   }
-  return activeSection.value?.rows ?? []
+  return allRows.value.filter((row) => rowSectionIds.value.get(row)?.has(activeSectionId.value))
 })
 
 const activeDescription = computed(() => {

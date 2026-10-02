@@ -30,7 +30,10 @@ func main() {
 		log.Fatalf("migrate: %v", err)
 	}
 
-	h := handlers.New(sqlDB)
+	h := handlers.New(sqlDB, cfg.UploadDir)
+	if err := handlers.EnsureUploadDir(cfg.UploadDir); err != nil {
+		log.Fatalf("uploads: %v", err)
+	}
 	r := gin.Default()
 
 	r.Use(cors.New(cors.Config{
@@ -45,6 +48,7 @@ func main() {
 	}))
 
 	r.GET("/health", h.Health)
+	r.Static("/uploads", cfg.UploadDir)
 	r.GET("/api/categories", h.ListCategories)
 	r.GET("/api/categories/*path", h.CategoryByPath)
 	r.GET("/api/entries", h.SearchEntries)
@@ -61,6 +65,7 @@ func main() {
 		admin.PUT("/entries/:id", h.AdminUpdateEntry)
 		admin.DELETE("/entries/:id", h.AdminDeleteEntry)
 		admin.GET("/categories", h.AdminListCategories)
+		admin.POST("/uploads/logo", h.AdminUploadLogo)
 	}
 
 	log.Printf("aipedia-api listening on %s", cfg.Addr)

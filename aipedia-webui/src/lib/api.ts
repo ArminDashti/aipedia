@@ -157,3 +157,29 @@ export async function adminUpdateEntry(id: number, body: EntryWriteBody): Promis
 export async function adminDeleteEntry(id: number): Promise<void> {
   await apiFetch(`/api/admin/entries/${id}`, { method: 'DELETE' }, true)
 }
+
+export async function adminUploadLogo(file: File): Promise<{ logoUrl: string }> {
+  const headers = new Headers()
+  const token = getAdminToken()
+  if (token) {
+    headers.set('Authorization', `Bearer ${token}`)
+  }
+  const body = new FormData()
+  body.append('file', file)
+  const res = await fetch(`${getApiBase()}/api/admin/uploads/logo`, {
+    method: 'POST',
+    headers,
+    body,
+  })
+  if (!res.ok) {
+    let message = `HTTP ${res.status}`
+    try {
+      const data = (await res.json()) as { error?: string }
+      if (data.error) message = data.error
+    } catch {
+      /* ignore */
+    }
+    throw new Error(message)
+  }
+  return (await res.json()) as { logoUrl: string }
+}

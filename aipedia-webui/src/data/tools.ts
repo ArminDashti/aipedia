@@ -42,6 +42,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=crewai.com&sz=32',
       },
       {
+        owner: 'codegen-sh',
+        name: 'Codegen',
+        description:
+          'Enterprise orchestration platform for AI coding agents with governance and audit trails; now part of ClickUp',
+        github: 'https://github.com/codegen-sh',
+        url: 'https://codegen.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=codegen.com&sz=32',
+      },
+      {
         owner: 'cursor',
         name: 'Cursor Agent Kanban',
         description: 'Cursor cookbook sample: multi-agent kanban board built with the Cursor SDK',
@@ -57,6 +66,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/langgenius/dify',
         url: 'https://dify.ai',
         logo: 'https://www.google.com/s2/favicons?domain=dify.ai&sz=32',
+      },
+      {
+        owner: 'Factory',
+        name: 'Factory Droids',
+        description:
+          'Agent-native development platform; Droids plan, build, and ship work from CLI, chat, and CI',
+        github: null,
+        url: 'https://factory.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=factory.com&sz=32',
       },
       {
         owner: 'lobehub',
@@ -86,6 +104,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=openhands.dev&sz=32',
       },
       {
+        owner: 'pydantic',
+        name: 'Pydantic AI',
+        description:
+          'Python agent framework: typed agent loop with structured outputs and dependency injection; Graph, Evals, and voice add-ons',
+        github: 'https://github.com/pydantic/pydantic-ai',
+        url: 'https://pydantic.dev/docs/ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=pydantic.dev&sz=32',
+      },
+      {
         owner: 'RasaHQ',
         name: 'Rasa',
         description:
@@ -94,6 +121,156 @@ export const toolSections: CatalogSection[] = [
         url: 'https://rasa.com/docs/rasa/',
         logo: 'https://www.google.com/s2/favicons?domain=rasa.com&sz=32',
       },
+      {
+        owner: 'RooCodeInc',
+        name: 'Roomote',
+        description:
+          'Source-available cloud coding agent that runs in your own environment and opens verified pull requests',
+        github: 'https://github.com/RooCodeInc/Roomote',
+        url: 'https://roomote.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=roomote.dev&sz=32',
+      },
+      {
+        owner: 'tinyhumansai',
+        name: 'TinyHumans',
+        description:
+          'Local-first open-source AI agents: OpenHuman for private research, OpenCompany for evidence-based decisions, and Medulla multi-agent terminal',
+        github: 'https://github.com/tinyhumansai',
+        url: 'https://tinyhumans.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=tinyhumans.ai&sz=32',
+      },
+      {
+        owner: 'agno-agi',
+        name: 'Agno',
+        description:
+          'Framework and AgentOS runtime to build, run, and manage agent platforms with SDK, UI, and ownership of data/memory',
+        github: 'https://github.com/agno-agi/agno',
+        url: 'https://docs.agno.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=agno.com&sz=32',
+      },
+      {
+        owner: 'Ant Ling',
+        name: 'Ant Ling',
+        description:
+          'Agent workflow models and Open API (Ling-3.0-flash) for cost-efficient intelligent apps',
+        github: null,
+        url: 'https://www.ant-ling.com/en/',
+        logo: 'https://www.google.com/s2/favicons?domain=ant-ling.com&sz=32',
+      },
+      {
+        owner: 'microsoft',
+        name: 'AutoGen',
+        description:
+          'Programming framework for multi-agent orchestration; pioneered conversational agent patterns (maintenance mode)',
+        github: 'https://github.com/microsoft/autogen',
+        url: 'https://microsoft.github.io/autogen/',
+        logo: 'https://www.google.com/s2/favicons?domain=microsoft.com&sz=32',
+      },
+      {
+        owner: 'cloudflare',
+        name: 'Cloudflare Agents',
+        description:
+          'Build and deploy durable AI agents on Cloudflare Workers: hibernate/wake, MCP, workflows, websockets',
+        github: 'https://github.com/cloudflare/agents',
+        url: 'https://developers.cloudflare.com/agents/',
+        logo: 'https://www.google.com/s2/favicons?domain=cloudflare.com&sz=32',
+      },
+      {
+        owner: 'deepseek-ai',
+        name: 'DeepSeek Harness',
+        description:
+          'Open-source agent harness: everything is a Cordis plugin; append-only session log, desktop/web UI, trajectory inspect',
+        github: 'https://github.com/deepseek-ai/deepseek-harness',
+        url: 'https://deepseek.com/en/harness/',
+        logo: 'https://www.google.com/s2/favicons?domain=deepseek.com&sz=32',
+      },
+      {
+        owner: 'langchain-ai',
+        name: 'LangGraph',
+        description:
+          'Low-level orchestration for durable stateful agents: human-in-the-loop, memory, and production deploy',
+        github: 'https://github.com/langchain-ai/langgraph',
+        url: 'https://langchain-ai.github.io/langgraph/',
+        logo: 'https://www.google.com/s2/favicons?domain=langchain.com&sz=32',
+      },
+      {
+        owner: 'cobusgreyling',
+        name: 'Loop Engineering',
+        description:
+          'Practical patterns, starters, and CLI tools (loop-audit, loop-init, loop-cost) for agent loop design',
+        github: 'https://github.com/cobusgreyling/loop-engineering',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'mastra-ai',
+        name: 'Mastra',
+        description:
+          'TypeScript framework for AI apps and agents: model routing, workflows, memory, MCP, evals, observability',
+        github: 'https://github.com/mastra-ai/mastra',
+        url: 'https://mastra.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=mastra.ai&sz=32',
+      },
+      {
+        owner: 'OpenBot',
+        name: 'OpenBot',
+        description:
+          'Local shared workspace for AI agent teams; run Codex, Claude, Gemini, Grok on your machine with plugins',
+        github: null,
+        url: 'https://openbot.run/',
+        logo: 'https://www.google.com/s2/favicons?domain=openbot.run&sz=32',
+      },
+      {
+        owner: 'microsoft',
+        name: 'Semantic Kernel',
+        description:
+          'SDK to integrate LLMs into apps with agents, plugins, and planners across Python, .NET, and Java',
+        github: 'https://github.com/microsoft/semantic-kernel',
+        url: 'https://learn.microsoft.com/en-us/semantic-kernel/',
+        logo: 'https://www.google.com/s2/favicons?domain=microsoft.com&sz=32',
+      },
+      {
+        owner: 'SmythOS',
+        name: 'SmythOS Studio',
+        description:
+          'Open-source visual AI agent builder and deployable runtime; drag-and-drop workspace with governance',
+        github: 'https://github.com/SmythOS/smythos-studio',
+        url: 'https://smythos.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=smythos.com&sz=32',
+      },
+      {
+        owner: 'vivy-yi',
+        name: 'Awesome Agent Orchestration',
+        description:
+          'Curated list of multi-agent frameworks, swarm systems, A2A/MCP, and agentic workflows',
+        github: 'https://github.com/vivy-yi/awesome-agent-orchestration',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'walkinglabs',
+        name: 'Awesome Harness Engineering',
+        description:
+          'Curated tools and guides for harness engineering: shaping agent environments for reliable work',
+        github: 'https://github.com/walkinglabs/awesome-harness-engineering',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'ComposioHQ',
+        name: 'Composio',
+        description:
+          '1000+ toolkits with tool search, auth management, and a sandboxed workbench so agents turn intent into action',
+        github: 'https://github.com/ComposioHQ/composio',
+        url: 'https://composio.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=composio.dev&sz=32',
+      },
+      {
+        owner: 'e2b-dev',
+        name: 'E2B',
+        description:
+          'Open-source secure sandboxes with real-world tools for running enterprise-grade agents',
+        github: 'https://github.com/e2b-dev/E2B',
+        url: 'https://e2b.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=e2b.dev&sz=32',
+      },
     ],
   },
   {
@@ -101,6 +278,14 @@ export const toolSections: CatalogSection[] = [
     title: 'Memory',
     description: 'Persistent context, knowledge graphs, and session memory for agents.',
     rows: [
+      {
+        owner: 'rohitg00',
+        name: 'AgentMemory',
+        description:
+          'Persistent memory for coding agents (Claude Code, Copilot CLI, Cursor, Gemini CLI): hook-based capture, compression, and cross-session injection',
+        github: 'https://github.com/rohitg00/agentmemory',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
       {
         owner: 'DeusData',
         name: 'Codebase Memory MCP',
@@ -196,6 +381,14 @@ export const toolSections: CatalogSection[] = [
         name: 'PMB',
         description: 'Local-first persistent memory for AI coding agents over MCP; SQLite-backed, offline',
         github: 'https://github.com/oleksiijko/pmb',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'mnemoverse',
+        name: 'Awesome Agent Memory',
+        description:
+          'Curated list of memory systems, frameworks, benchmarks, and research for AI agents',
+        github: 'https://github.com/mnemoverse/awesome-agent-memory',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
@@ -319,11 +512,28 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=repomix.com&sz=32',
       },
       {
+        owner: 'manojmallick',
+        name: 'Sigmap',
+        description:
+          'CLI that maps a codebase so AI coding assistants only receive the most relevant files; 30+ languages, offline, with MCP and IDE integration',
+        github: 'https://github.com/manojmallick/sigmap',
+        url: 'https://sigmap.io/',
+        logo: 'https://www.google.com/s2/favicons?domain=sigmap.io&sz=32',
+      },
+      {
         owner: 'mohsen1',
         name: 'yek',
         description:
           'Fast Rust tool to serialize text-based files in a repo or directory for LLM consumption',
         github: 'https://github.com/mohsen1/yek',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'yzfly',
+        name: 'Awesome Context Engineering',
+        description:
+          'Curated resources, papers, tools, and practices for context engineering in agents and LLMs',
+        github: 'https://github.com/yzfly/awesome-context-engineering',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
@@ -402,6 +612,15 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/github/spec-kit',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
+      {
+        owner: 'eclipse-theia',
+        name: 'Theia Platform',
+        description:
+          'Vendor-neutral framework for building custom AI-native IDEs and tools for desktop and cloud',
+        github: 'https://github.com/eclipse-theia/theia',
+        url: 'https://theia-ide.org/',
+        logo: 'https://www.google.com/s2/favicons?domain=theia-ide.org&sz=32',
+      },
     ],
   },
   {
@@ -424,6 +643,223 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/open-webui/open-webui',
         url: 'https://openwebui.com/',
         logo: 'https://www.google.com/s2/favicons?domain=openwebui.com&sz=32',
+      },
+      {
+        owner: 'CopilotKit',
+        name: 'CopilotKit',
+        description:
+          'Frontend stack for agents and generative UI: React, Angular, mobile, and Slack; makers of the AG-UI protocol',
+        github: 'https://github.com/CopilotKit/CopilotKit',
+        url: 'https://www.copilotkit.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=copilotkit.ai&sz=32',
+        categories: ['agents'],
+      },
+    ],
+  },
+  {
+    id: 'gateways',
+    title: 'Gateways & Inference',
+    description: 'LLM routers, proxies, and hosted inference platforms.',
+    rows: [
+      {
+        owner: 'BerriAI',
+        name: 'LiteLLM',
+        description:
+          'Gateway and Python SDK that puts 100+ LLMs behind one OpenAI-compatible API with keys, budgets, and routing',
+        github: 'https://github.com/BerriAI/litellm',
+        url: 'https://litellm.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=litellm.ai&sz=32',
+        categories: ['dev'],
+      },
+      {
+        owner: 'togethercomputer',
+        name: 'Together AI',
+        description:
+          'Serverless and dedicated inference for open-weight models, plus GPU clusters and fine-tuning',
+        github: 'https://github.com/togethercomputer',
+        url: 'https://www.together.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=together.ai&sz=32',
+      },
+      {
+        owner: 'cerebras',
+        name: 'Cerebras Inference',
+        description:
+          'Fast inference API for open models served from wafer-scale CS-3 and CS-4 systems',
+        github: 'https://github.com/Cerebras',
+        url: 'https://www.cerebras.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=cerebras.ai&sz=32',
+      },
+      {
+        owner: 'NVIDIA',
+        name: 'NVIDIA NIM',
+        description: 'Optimized inference microservices and hosted model endpoints on build.nvidia.com',
+        github: 'https://github.com/NVIDIA',
+        url: 'https://build.nvidia.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=32',
+      },
+      {
+        owner: 'PrismML-Eng',
+        name: 'PrismML',
+        description:
+          'Ternary and 1-bit Bonsai models for local inference; Bonsai 2 27B ships as a 5.9 GB GGUF',
+        github: 'https://github.com/PrismML-Eng',
+        url: 'https://prismml.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=prismml.com&sz=32',
+      },
+      {
+        owner: 'GooseAI',
+        name: 'GooseAI',
+        description:
+          'Fully managed OpenAI-compatible NLP inference API from CoreWeave and Anlatan; tiered per-request pricing',
+        github: null,
+        url: 'https://goose.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=goose.ai&sz=32',
+      },
+      {
+        owner: 'Tetrate',
+        name: 'Tetrate',
+        description:
+          'Enterprise AI gateways: Agent Router, AI and MCP gateways, and guardrails with spend attribution by team and agent',
+        github: 'https://github.com/tetrateio',
+        url: 'https://tetrate.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=tetrate.ai&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'observability',
+    title: 'Observability & Code Review',
+    description: 'Usage analytics, tracing, and automated pull-request review.',
+    rows: [
+      {
+        owner: 'greptileai',
+        name: 'Greptile',
+        description:
+          'AI reviewer that indexes a codebase into a graph and reviews pull requests with that context',
+        github: 'https://github.com/greptileai',
+        url: 'https://www.greptile.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=greptile.com&sz=32',
+        categories: ['agents'],
+      },
+      {
+        owner: 'HamedMP',
+        name: 'CursorLens',
+        description: 'Self-hosted proxy and dashboard that logs Cursor generations, token usage, and cost',
+        github: 'https://github.com/HamedMP/CursorLens',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'future-agi',
+        name: 'traceAI',
+        description:
+          'OpenTelemetry-native tracing for LLM and agent apps in Python, TypeScript, Java, and C#',
+        github: 'https://github.com/future-agi/traceAI',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+        categories: ['dev'],
+      },
+      {
+        owner: 'anhermon',
+        name: 'Awesome Agent Observability',
+        description:
+          'Curated tools and standards for LLM/agent observability: OTel GenAI, tracing, evals, guardrails, MCP',
+        github: 'https://github.com/anhermon/awesome-agent-observability',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'evals',
+    title: 'Evaluation & Benchmarks',
+    description: 'Leaderboards and head-to-head model evaluation.',
+    rows: [
+      {
+        owner: 'Arena Intelligence',
+        name: 'Arena AI',
+        description:
+          'LLM leaderboard and arena where models compete head-to-head on human-voted prompts; formerly LMArena',
+        github: null,
+        url: 'https://arena.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=arena.ai&sz=32',
+      },
+      {
+        owner: 'benchflow-ai',
+        name: 'Awesome Evals',
+        description:
+          'Annotated curated library of papers, blogs, talks, tools, and benchmarks for building and evaluating AI agents',
+        github: 'https://github.com/benchflow-ai/awesome-evals',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'standards',
+    title: 'Specs & Standards',
+    description: 'Shared conventions that coding agents and harnesses read.',
+    rows: [
+      {
+        owner: 'agentsmd',
+        name: 'AGENTS.md',
+        description:
+          'Open Markdown format that gives coding agents repo-specific instructions; no required fields',
+        github: 'https://github.com/agentsmd/agents.md',
+        url: 'https://agents.md/',
+        logo: 'https://www.google.com/s2/favicons?domain=agents.md&sz=32',
+      },
+      {
+        owner: 'enguard-ai',
+        name: 'Awesome AI Guardrails',
+        description:
+          'Curated materials on AI guardrails: security/privacy, relevance, language quality, content and logic validation',
+        github: 'https://github.com/enguard-ai/awesome-ai-guardrails',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'media',
+    title: 'Media & Creative',
+    description: 'Generation workspaces for image, video, audio, and 3D.',
+    rows: [
+      {
+        owner: 'MuseSpark AI',
+        name: 'MuseSpark',
+        description:
+          'AI generation workspace spanning image, video, audio, 3D, and text models behind one subscription',
+        github: null,
+        url: 'https://musespark.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=musespark.ai&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'web',
+    title: 'Web, Scraping & Browsing',
+    description: 'Scraping frameworks, stealth browser automation, and internet access for agents.',
+    rows: [
+      {
+        owner: 'Panniantong',
+        name: 'Agent Reach',
+        description:
+          'One CLI giving agents eyes on the internet: read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu with zero API fees',
+        github: 'https://github.com/Panniantong/Agent-Reach',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'whaleyxbt',
+        name: 'Patchright Enhanced',
+        description:
+          'Stealth browser automation toolkit for QA, monitoring, pentesting, and internal workflows; passes Cloudflare, Kasada, and DataDome out of the box',
+        github: 'https://github.com/whaleyxbt/patchright-enhanced',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'D4Vinci',
+        name: 'Scrapling',
+        description:
+          'Adaptive web scraping framework: undetectable fetches and smart proxies, from a single request to full-scale crawls',
+        github: 'https://github.com/d4vinci/Scrapling',
+        url: 'https://scrapling.readthedocs.io/en/latest/',
+        logo: 'https://www.google.com/s2/favicons?domain=scrapling.readthedocs.io&sz=32',
       },
     ],
   },

@@ -99,6 +99,15 @@ export const skillSections: CatalogSection[] = [
         github: 'https://github.com/iqonicdesignofficial/hope-ui-design-system',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
+      {
+        owner: 'tt-a1i',
+        name: 'Archify',
+        description:
+          'Agent skill for verifiable architecture, workflow, sequence, and data-flow diagrams as self-contained HTML with motion and export',
+        github: 'https://github.com/tt-a1i/archify',
+        url: 'https://tt-a1i.github.io/archify/',
+        logo: 'https://www.google.com/s2/favicons?domain=tt-a1i.github.io&sz=32',
+      },
     ],
   },
   {
@@ -171,6 +180,15 @@ export const skillSections: CatalogSection[] = [
         url: 'https://ponytail.dev',
         logo: 'https://www.google.com/s2/favicons?domain=ponytail.dev&sz=32',
       },
+      {
+        owner: 'OthmanAdi',
+        name: 'Planning with Files',
+        description:
+          'Persistent file-based planning for agents: crash-proof markdown plans, session recovery, and per-turn re-injection against context rot',
+        github: 'https://github.com/OthmanAdi/planning-with-files',
+        url: 'https://www.skills.sh/othmanadi/planning-with-files/planning-with-files',
+        logo: 'https://www.google.com/s2/favicons?domain=skills.sh&sz=32',
+      },
     ],
   },
   {
@@ -215,6 +233,24 @@ export const skillSections: CatalogSection[] = [
         github: 'https://github.com/obra/superpowers',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
+      {
+        owner: 'Graphify-Labs',
+        name: 'Graphify',
+        description:
+          'Turns any codebase with docs, SQL schemas, configs, and PDFs into a queryable knowledge graph via a /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI',
+        github: 'https://github.com/Graphify-Labs/graphify',
+        url: 'https://www.graphify.com',
+        logo: 'https://www.google.com/s2/favicons?domain=graphify.com&sz=32',
+      },
+      {
+        owner: 'calesthio',
+        name: 'OpenMontage',
+        description:
+          'Agentic video production system: 12 production pipelines, 100+ tools, and 700+ skill files that turn a coding assistant into a video studio',
+        github: 'https://github.com/calesthio/OpenMontage',
+        url: 'https://www.openmontage.video/',
+        logo: 'https://www.google.com/s2/favicons?domain=openmontage.video&sz=32',
+      },
     ],
   },
   {
@@ -237,6 +273,47 @@ export const skillSections: CatalogSection[] = [
         github: null,
         url: 'https://www.skills.sh/',
         logo: 'https://www.google.com/s2/favicons?domain=skills.sh&sz=32',
+      },
+      {
+        owner: 'NVIDIA',
+        name: 'NVIDIA Skills',
+        description: 'Catalog of NVIDIA-verified agent skills, installed with `npx skills add NVIDIA/skills`',
+        github: 'https://github.com/NVIDIA/skills',
+        url: 'https://build.nvidia.com/skills',
+        logo: 'https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=32',
+      },
+      {
+        owner: 'NVIDIA',
+        name: 'SkillSpector',
+        description:
+          'Security scanner for agent skills: detects prompt injection, data exfiltration, and supply-chain risks before install',
+        github: 'https://github.com/NVIDIA/SkillSpector',
+        url: 'https://docs.nvidia.com/skills/scanning-agent-skills',
+        logo: 'https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=32',
+      },
+      {
+        owner: 'yusufkaraaslan',
+        name: 'Skill Seekers',
+        description:
+          'Converts documentation sites, GitHub repos, and PDFs into Claude skills with automatic conflict detection',
+        github: 'https://github.com/yusufkaraaslan/Skill_Seekers',
+        url: 'https://skillseekersweb.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=skillseekersweb.com&sz=32',
+      },
+    ],
+  },
+  {
+    id: 'courses',
+    title: 'Courses & Learning',
+    description: 'Hands-on courses and learning paths for building AI systems.',
+    rows: [
+      {
+        owner: 'jamwithai',
+        name: 'Production Agentic RAG Course',
+        description:
+          'Hands-on course building production RAG systems from the ground up, starting with an arXiv paper curator in Python',
+        github: 'https://github.com/jamwithai/production-agentic-rag-course',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
   },

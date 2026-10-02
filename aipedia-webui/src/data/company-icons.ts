@@ -1,32 +1,34 @@
 export type CompanyMark = {
   icon: string
   url?: string
+  /** Black/near-black mark; invert in dark theme so it stays visible. */
+  mono?: boolean
 }
 
 const marks: Record<string, CompanyMark> = {
   Alibaba: { icon: '/logos/alibaba.svg', url: 'https://www.alibabagroup.com' },
-  Amazon: { icon: '/logos/amazon.svg', url: 'https://aws.amazon.com' },
-  AWS: { icon: '/logos/amazon.svg', url: 'https://aws.amazon.com' },
-  Anthropic: { icon: '/logos/anthropic.svg', url: 'https://anthropic.com' },
-  Anysphere: { icon: '/logos/cursor.svg', url: 'https://cursor.com' },
-  'Cursor (Anysphere)': { icon: '/logos/cursor.svg', url: 'https://cursor.com' },
+  Amazon: { icon: '/logos/amazon.svg', url: 'https://aws.amazon.com', mono: true },
+  AWS: { icon: '/logos/amazon.svg', url: 'https://aws.amazon.com', mono: true },
+  Anthropic: { icon: '/logos/anthropic.svg', url: 'https://anthropic.com', mono: true },
+  Anysphere: { icon: '/logos/cursor.svg', url: 'https://cursor.com', mono: true },
+  'Cursor (Anysphere)': { icon: '/logos/cursor.svg', url: 'https://cursor.com', mono: true },
   'Character.AI': { icon: '/logos/characterai.svg', url: 'https://character.ai' },
-  Cline: { icon: '/logos/cline.svg', url: 'https://cline.bot' },
+  Cline: { icon: '/logos/cline.svg', url: 'https://cline.bot', mono: true },
   Cognition: { icon: '/logos/cognition.svg', url: 'https://devin.ai' },
   DeepSeek: { icon: '/logos/deepseek.svg', url: 'https://deepseek.com' },
   Google: { icon: '/logos/google.svg', url: 'https://ai.google' },
   'Google DeepMind': { icon: '/logos/deepmind.svg', url: 'https://deepmind.google' },
-  GitHub: { icon: '/logos/github.svg', url: 'https://github.com' },
+  GitHub: { icon: '/logos/github.svg', url: 'https://github.com', mono: true },
   Kilo: { icon: '/logos/kilo.svg', url: 'https://kilo.ai' },
   Meta: { icon: '/logos/meta.svg', url: 'https://www.meta.ai' },
   Microsoft: { icon: '/logos/microsoft.svg', url: 'https://microsoft.com' },
   'Mistral AI': { icon: '/logos/mistral.svg', url: 'https://mistral.ai' },
-  OpenAI: { icon: '/logos/openai.svg', url: 'https://openai.com' },
+  OpenAI: { icon: '/logos/openai.svg', url: 'https://openai.com', mono: true },
   Perplexity: { icon: '/logos/perplexity.svg', url: 'https://www.perplexity.ai' },
   Quora: { icon: '/logos/quora.svg', url: 'https://poe.com' },
-  'Tencent Hunyuan': { icon: '/logos/tencent.svg', url: 'https://hy.tencent.com' },
-  Tencent: { icon: '/logos/tencent.svg', url: 'https://www.tencent.com' },
-  xAI: { icon: '/logos/xai.svg', url: 'https://x.ai' },
+  'Tencent Hunyuan': { icon: '/logos/tencent.svg', url: 'https://hy.tencent.com', mono: true },
+  Tencent: { icon: '/logos/tencent.svg', url: 'https://www.tencent.com', mono: true },
+  xAI: { icon: '/logos/xai.svg', url: 'https://x.ai', mono: true },
   'Zed Industries': { icon: '/logos/zed.svg', url: 'https://zed.dev' },
 }
 
@@ -72,6 +74,11 @@ export function canonicalCompanyName(name: string): string {
 export function companyIconSrc(name: string): string | null {
   const canonical = canonicalCompanyName(name)
   return marks[canonical]?.icon ?? null
+}
+
+export function companyIconIsMono(name: string): boolean {
+  const canonical = canonicalCompanyName(name)
+  return marks[canonical]?.mono === true
 }
 
 export function companyHomeUrl(name: string): string | null {

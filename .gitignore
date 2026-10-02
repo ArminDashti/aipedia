@@ -1,4 +1,4 @@
-﻿# Default ignores
+# Default ignores
 *.exe
 
 # Local dev server logs
@@ -12,3 +12,14 @@ aipedia-api/bin/server.exe
 aipedia-api/bin/
 *.sqlite
 *.sqlite-journal
+# === auto: large files (>5MB) ===
+
+# === commit-push-to-github large files (auto) ===
+
+# commit-push-to-github: large files (>5MB) auto-ignored
+
+# BEGIN AUTO-IGNORE LARGE FILES (>5MB; managed by commit-push-to-github)
+# END AUTO-IGNORE LARGE FILES
+
+# auto-managed large-file section (>5MB)
+# (paths appended by commit-push-to-github)
