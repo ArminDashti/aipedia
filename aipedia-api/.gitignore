@@ -1,6 +1,8 @@
 *.exe
 *.EXE
 bin/
+tmp/*
+!tmp/.gitkeep
 .env
 .armin/
 .cursor/
