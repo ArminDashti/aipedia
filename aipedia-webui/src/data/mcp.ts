@@ -38,6 +38,31 @@ export const mcpSections: CatalogSection[] = [
         url: 'https://smithery.ai/',
         logo: 'https://www.google.com/s2/favicons?domain=smithery.ai&sz=32',
       },
+      {
+        owner: 'MCP Marketplace',
+        name: 'MCP Marketplace',
+        description:
+          'Security-scanned MCP directory with install commands and a hosted MCP server for in-client search',
+        github: null,
+        url: 'https://mcp-marketplace.io/',
+        logo: 'https://www.google.com/s2/favicons?domain=mcp-marketplace.io&sz=32',
+      },
+      {
+        owner: 'wong2',
+        name: 'Awesome MCP Servers',
+        description: 'Curated directory of MCP servers; submissions go through the website',
+        github: 'https://github.com/wong2/awesome-mcp-servers',
+        url: 'https://mcpservers.org/',
+        logo: 'https://www.google.com/s2/favicons?domain=mcpservers.org&sz=32',
+      },
+      {
+        owner: 'MCP Market',
+        name: 'MCP Market',
+        description: 'Directory of MCP servers, clients, agent skills, and agent tools',
+        github: null,
+        url: 'https://mcpmarket.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=mcpmarket.com&sz=32',
+      },
     ],
   },
   {
@@ -179,6 +204,14 @@ export const mcpSections: CatalogSection[] = [
         github: 'https://github.com/atlassian-labs/mcp-compressor',
         url: 'https://atlassian-labs.github.io/mcp-compressor/',
         logo: 'https://www.google.com/s2/favicons?domain=atlassian.com&sz=32',
+      },
+      {
+        owner: 'ooples',
+        name: 'Token Optimizer MCP',
+        description:
+          'MCP server that measures token savings per coding agent, trims context, and shares a local knowledge graph across CLI clients',
+        github: 'https://github.com/ooples/token-optimizer-mcp',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
   },

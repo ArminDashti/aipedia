@@ -220,11 +220,28 @@ export const skillSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
       {
+        owner: 'qdrant',
+        name: 'Qdrant Skills',
+        description:
+          'Agent skills for Qdrant vector search: scaling, search quality, deployment, and SDK usage',
+        github: 'https://github.com/qdrant/skills',
+        url: 'https://skills.qdrant.tech',
+        logo: 'https://www.google.com/s2/favicons?domain=qdrant.tech&sz=32',
+      },
+      {
         owner: 'remotion-dev',
         name: 'Remotion Skills',
         description: 'Agent skills for Remotion programmatic video',
         github: 'https://github.com/remotion-dev/skills',
         logo: 'https://www.google.com/s2/favicons?domain=remotion.dev&sz=32',
+      },
+      {
+        owner: 'Kulaxyz',
+        name: 'Self-Learning Skills',
+        description:
+          'Skill that harvests a hard-won session path into a reusable skill or rule for Claude Code, Cursor, and AGENTS.md',
+        github: 'https://github.com/Kulaxyz/self-learning-skills',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
       {
         owner: 'obra',

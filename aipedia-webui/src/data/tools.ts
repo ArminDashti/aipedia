@@ -77,6 +77,15 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=factory.com&sz=32',
       },
       {
+        owner: 'assafelovic',
+        name: 'GPT Researcher',
+        description:
+          'Autonomous agent that runs deep research over local and web data with any LLM provider',
+        github: 'https://github.com/assafelovic/gpt-researcher',
+        url: 'https://gptr.dev',
+        logo: 'https://www.google.com/s2/favicons?domain=gptr.dev&sz=32',
+      },
+      {
         owner: 'lobehub',
         name: 'LobeHub',
         description:
@@ -95,6 +104,14 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=letta.com&sz=32',
       },
       {
+        owner: 'CopilotKit',
+        name: 'OpenDots',
+        description: 'Always-on AI coworkers that move between text, calls, and Slack',
+        github: 'https://github.com/CopilotKit/OpenDots',
+        url: 'https://www.copilotkit.ai/opendots',
+        logo: 'https://www.google.com/s2/favicons?domain=copilotkit.ai&sz=32',
+      },
+      {
         owner: 'OpenHands',
         name: 'OpenHands',
         description:
@@ -102,6 +119,14 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/OpenHands',
         url: 'https://www.openhands.dev/',
         logo: 'https://www.google.com/s2/favicons?domain=openhands.dev&sz=32',
+      },
+      {
+        owner: 'milind-soni',
+        name: 'OpenMausBot',
+        description: 'Open-source Grok Bot alternative with a virtual machine that bots can use',
+        github: 'https://github.com/milind-soni/OpenMausBot',
+        url: 'https://www.openmausbot.com/',
+        logo: 'https://www.google.com/s2/favicons?domain=openmausbot.com&sz=32',
       },
       {
         owner: 'pydantic',
@@ -147,6 +172,14 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/agno-agi/agno',
         url: 'https://docs.agno.com/',
         logo: 'https://www.google.com/s2/favicons?domain=agno.com&sz=32',
+      },
+      {
+        owner: 'FoundationAgents',
+        name: 'AFlow',
+        description: 'Automates generation of agentic workflows (ICLR 2025 oral)',
+        github: 'https://github.com/FoundationAgents/AFlow',
+        url: 'https://arxiv.org/abs/2410.10762',
+        logo: 'https://www.google.com/s2/favicons?domain=arxiv.org&sz=32',
       },
       {
         owner: 'Ant Ling',
@@ -251,6 +284,15 @@ export const toolSections: CatalogSection[] = [
         description:
           'Curated tools and guides for harness engineering: shaping agent environments for reliable work',
         github: 'https://github.com/walkinglabs/awesome-harness-engineering',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'selfimproving-agent',
+        name: 'Awesome Self-Improving Agents',
+        description:
+          'Curated list of self-improvement methods for foundation-model agentic systems',
+        github: 'https://github.com/selfimproving-agent/awesome-Self-Improving-Agents',
+        url: 'https://selfimproving-agent.github.io/',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
       {
@@ -399,6 +441,24 @@ export const toolSections: CatalogSection[] = [
     description: 'Prompt, context, and tool-output compression before the LLM.',
     rows: [
       {
+        owner: 'open-compress',
+        name: 'Claw Compactor',
+        description:
+          '14-stage fusion pipeline for reversible LLM token compression and AST-aware code analysis, with no inference cost',
+        github: 'https://github.com/open-compress/claw-compactor',
+        url: 'https://www.opencompress.ai/',
+        logo: 'https://www.google.com/s2/favicons?domain=opencompress.ai&sz=32',
+      },
+      {
+        owner: 'juyterman1000',
+        name: 'Entroly',
+        description:
+          'Local-first context compression where every reduction is reversible and carries an auditable receipt',
+        github: 'https://github.com/juyterman1000/entroly',
+        url: 'https://juyterman1000.github.io/entroly/docs/index.html',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
         owner: 'headroomlabs-ai',
         name: 'Headroom',
         description:
@@ -415,6 +475,32 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/microsoft/LLMLingua',
         url: 'https://llmlingua.com/',
         logo: 'https://www.google.com/s2/favicons?domain=microsoft.com&sz=32',
+      },
+      {
+        owner: 'rtk-ai',
+        name: 'RTK',
+        description:
+          'Rust CLI proxy that cuts LLM token use by 60-90% on common dev commands; single binary, no dependencies',
+        github: 'https://github.com/rtk-ai/rtk',
+        url: 'https://www.rtk-ai.app',
+        logo: 'https://www.google.com/s2/favicons?domain=rtk-ai.app&sz=32',
+      },
+      {
+        owner: 'ooples',
+        name: 'Token Optimizer MCP',
+        description:
+          'Measures token savings per coding agent, trims context, and shares a local knowledge graph across CLI clients',
+        github: 'https://github.com/ooples/token-optimizer-mcp',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+        categories: ['context'],
+      },
+      {
+        owner: 'pleasedodisturb',
+        name: 'Awesome LLM Token Optimization',
+        description:
+          'Curated strategies, tools, papers, and resources for cutting LLM token cost in production',
+        github: 'https://github.com/pleasedodisturb/awesome-llm-token-optimization',
+        logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
       },
     ],
   },
@@ -493,6 +579,16 @@ export const toolSections: CatalogSection[] = [
         github: 'https://github.com/coderamp-labs/gitingest',
         url: 'https://gitingest.com',
         logo: 'https://www.google.com/s2/favicons?domain=gitingest.com&sz=32',
+      },
+      {
+        owner: 'yvgude',
+        name: 'LeanCTX',
+        description:
+          'Open-source context gateway that selects what an AI system can see, with supported controls and evidence',
+        github: 'https://github.com/yvgude/lean-ctx',
+        url: 'https://leanctx.com',
+        logo: 'https://www.google.com/s2/favicons?domain=leanctx.com&sz=32',
+        categories: ['compression'],
       },
       {
         owner: 'microsoft',
@@ -596,6 +692,14 @@ export const toolSections: CatalogSection[] = [
           'API proxy that serves OpenAI-compatible endpoints backed by the Cursor agent CLI',
         github: 'https://github.com/anyrobert/cursor-api-proxy',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'dolthub',
+        name: 'Dolt',
+        description: 'Version-controlled SQL database: branch, merge, diff, and clone data like Git',
+        github: 'https://github.com/dolthub/dolt',
+        url: 'https://www.dolthub.com',
+        logo: 'https://www.google.com/s2/favicons?domain=dolthub.com&sz=32',
       },
       {
         owner: 'microsoft',
@@ -716,6 +820,14 @@ export const toolSections: CatalogSection[] = [
         logo: 'https://www.google.com/s2/favicons?domain=goose.ai&sz=32',
       },
       {
+        owner: 'zilliztech',
+        name: 'GPTCache',
+        description: 'Semantic cache for LLM responses, with LangChain and LlamaIndex integrations',
+        github: 'https://github.com/zilliztech/GPTCache',
+        url: 'https://gptcache.readthedocs.io',
+        logo: 'https://www.google.com/s2/favicons?domain=zilliz.com&sz=32',
+      },
+      {
         owner: 'Tetrate',
         name: 'Tetrate',
         description:
@@ -788,6 +900,15 @@ export const toolSections: CatalogSection[] = [
           'Annotated curated library of papers, blogs, talks, tools, and benchmarks for building and evaluating AI agents',
         github: 'https://github.com/benchflow-ai/awesome-evals',
         logo: 'https://www.google.com/s2/favicons?domain=github.com&sz=32',
+      },
+      {
+        owner: 'anomalyco',
+        name: 'Models.dev',
+        description:
+          'Open-source database of AI model specs, pricing, and capabilities, with JSON catalog APIs',
+        github: 'https://github.com/anomalyco/models.dev',
+        url: 'https://models.dev/',
+        logo: 'https://www.google.com/s2/favicons?domain=models.dev&sz=32',
       },
     ],
   },
