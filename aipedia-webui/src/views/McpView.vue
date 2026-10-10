@@ -3,8 +3,8 @@ import CatalogSections from '@/components/CatalogSections.vue'
 import { mcpSections } from '@/data/mcp'
 
 const columns = [
-  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'name', label: 'MCP', type: 'named-link' as const },
+  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'description', label: 'Description' },
 ]
 </script>

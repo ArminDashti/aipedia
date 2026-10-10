@@ -3,8 +3,8 @@ import CatalogSections from '@/components/CatalogSections.vue'
 import { toolSections } from '@/data/tools'
 
 const columns = [
-  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'name', label: 'Tool', type: 'named-link' as const },
+  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'description', label: 'Description' },
 ]
 </script>

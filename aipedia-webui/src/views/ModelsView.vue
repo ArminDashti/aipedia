@@ -3,8 +3,8 @@ import CatalogTable from '@/components/CatalogTable.vue'
 import { models } from '@/data/models'
 
 const columns = [
-  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'model', label: 'Model', type: 'named-link' as const },
+  { key: 'owner', label: 'Owner', type: 'brand' as const },
   { key: 'openSource', label: 'OpenSource', type: 'tick' as const },
   { key: 'openWeight', label: 'OpenWeight', type: 'tick' as const },
   { key: 'introducedAt', label: 'Introduced' },
